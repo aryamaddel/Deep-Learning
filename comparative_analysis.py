@@ -20,7 +20,8 @@ class_names = [
 ]
 
 print("=" * 75)
-print("COMPARATIVE ANALYSIS — 8 Models on Fashion MNIST")
+n_models = len(results)
+print(f"COMPARATIVE ANALYSIS — {n_models} Models on Fashion MNIST")
 print("=" * 75)
 print(f"{'Rank':<5s} {'Model':<28s} {'Acc':>7s} {'F1':>7s} {'Train(s)':>9s} {'Infer(s)':>9s}")
 print("-" * 65)
@@ -92,7 +93,7 @@ print(f"Saved: comparison_best_cm.png (best: {best['name']})")
 
 # ── Per-class accuracy comparison ───────────────────────────────────
 print("\n----- PER-CLASS ACCURACY (diagonal of confusion matrix / class total) -----")
-header = f"{'Class':<15s}" + "".join(f"{r['name'][:12]:>12s}" for r in results)
+header = f"{'Class':<15s}" + "".join(f"{r['name'][:14]:>14s}" for r in results)
 print(header)
 print("-" * len(header))
 for c in range(10):
@@ -100,7 +101,7 @@ for c in range(10):
     for r in results:
         cm_arr = np.array(r["cm"])
         class_acc = cm_arr[c, c] / cm_arr[c, :].sum()
-        line += f"{class_acc:>12.3f}"
+        line += f"{class_acc:>14.3f}"
     print(line)
 
 print("\nDone.")
