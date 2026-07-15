@@ -1,0 +1,13 @@
+[project]
+name = "fashion-mnist-benchmark"
+version = "1.0.0"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "matplotlib",
+    "torch",
+    "torchvision",
+    "scikit-learn",
+    "xgboost",
+    "tqdm",
+]
