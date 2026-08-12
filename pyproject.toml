@@ -1,13 +1,25 @@
 [project]
-name = "fashion-mnist-benchmark"
+name = "dl-ai-libraries"
 version = "1.0.0"
-requires-python = ">=3.10"
+description = "Study and implementation of Python libraries for Deep Learning and Generative AI applications"
+requires-python = ">=3.12"
 dependencies = [
     "numpy",
+    "pandas",
     "matplotlib",
+    "opencv-python",
+    "scikit-learn",
     "torch",
     "torchvision",
-    "scikit-learn",
-    "xgboost",
-    "tqdm",
+    "tensorflow",
+    "transformers",
+    "diffusers",
+    "accelerate",
+    "safetensors",
+    "pillow",
+]
+
+[dependency-groups]
+dev = [
+    "ipython>=9.16.1",
 ]
