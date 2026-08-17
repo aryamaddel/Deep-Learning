@@ -1,0 +1,9 @@
+{
+  "selection_rule": "highest best validation accuracy in each controlled study",
+  "best_activation": "sigmoid",
+  "best_optimizer": "rmsprop",
+  "best_regularization": "dropout",
+  "final_test_accuracy": 0.8704000115394592,
+  "final_test_loss": 0.3580767810344696,
+  "final_training_time_seconds": 14.17527699999846
+}
