@@ -17,6 +17,10 @@ dependencies = [
     "accelerate",
     "safetensors",
     "pillow",
+    "gensim>=4.4.0",
+    "nltk>=3.10.3",
+    "spacy>=3.8.16",
+    "seaborn>=0.13.2",
 ]
 
 [dependency-groups]
